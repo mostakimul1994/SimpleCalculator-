@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" language="javascript">
+		function dis(x) {
+			form.txt.value=form.txt.value+x;
+		}
+		function clear()
+		{   
+		   document.getElementById("txt").reset();
+		}
+	</script>
+</head>
+<body>
+	<div id="cal">
+	<form name="form">
+
+		<p><input id="textbox" type="textbox" name="txt"><br>
+		<button onClick="clear()">Clear</button><br>
+		<input type="button" id="button" name="btn9" value="9" onclick="dis(btn9.value)">
+		<input type="button" id="button" name="btn8" value="8" onclick="dis(btn8.value)">
+		<input type="button" id="button" name="btn7" value="7" onclick="dis(btn7.value)">
+		<input type="button" id="button" name="btnd" value="/" onclick="dis(btnd.value)">
+	    </p>
+		<p><input type="button" id="button" name="btn6" value="6" onclick="dis(btn6.value)">
+		<input type="button" id="button" name="btn5" value="5" onclick="dis(btn5.value)">
+		<input type="button" id="button" name="btn4" value="4" onclick="dis(btn4.value)">
+		<input type="button" id="button" name="btnm" value="*" onclick="dis(btnm.value)">
+        </p><p>
+		<input type="button" id="button" name="btn3" value="3" onclick="dis(btn3.value)">
+		<input type="button" id="button" name="btn2" value="2" onclick="dis(btn2.value)">
+		<input type="button" id="button" name="btn1" value="1" onclick="dis(btn1.value)">
+		<input type="button" id="button" name="btns" value="-" onclick="dis(btns.value)">
+        </p><p>
+		<input type="button" id="button" name="btndot" value="." onclick="dis(btndot.value)">
+		<input type="button" id="button" name="btn0" value="0" onclick="dis(btn0.value)">
+		<input type="button" id="button" name="btneq" value="=" onclick="txt.value=eval(txt.value)">
+		<input type="button" id="button" name="btnp" value="+" onclick="dis(btnp.value)">
+	</p>
+
+	</form>
+</div>
+</body>	
+</html>
